@@ -1,0 +1,14 @@
+<h1>Games#new</h1>
+<!-- <p>Find me in app/views/games/new.html.erb</p> -->
+
+<% @letter_grid.each do |letter| %>
+<ul class = "list-inline ">
+  <li><%= letter %></li>
+</ul>
+<% end %>
+
+<h4>Your word ?</h4>
+<form action="score" class = "form-group">
+  <input type="text" name="word">
+  <input type="submit" value="Submit!" class = "btn btn-default">
+</form>
